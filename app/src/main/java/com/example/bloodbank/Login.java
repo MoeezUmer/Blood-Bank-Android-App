@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -23,6 +24,7 @@ public class Login extends AppCompatActivity {
     TextView login,createto;
     Button btnlogin;
     FirebaseAuth fAuth;
+    FloatingActionButton fbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,15 @@ public class Login extends AppCompatActivity {
         btnlogin=findViewById(R.id.login);
         login=findViewById(R.id.textlogin);
         fAuth= FirebaseAuth.getInstance();
+        fbutton=findViewById(R.id.floating2);
+
+        fbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getApplicationContext(),Signup.class));
+            }
+        });
 
 
         btnlogin.setOnClickListener(new View.OnClickListener() {

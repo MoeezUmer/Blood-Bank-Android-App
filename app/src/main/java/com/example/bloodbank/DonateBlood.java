@@ -21,7 +21,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class DonateBlood extends AppCompatActivity {
+public class   DonateBlood extends AppCompatActivity {
 
 
     EditText edfullname,edemail,edpassword,edgender,edbloodgroup,edaddress,edcity,edphoneno;

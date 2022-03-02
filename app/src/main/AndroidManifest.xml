@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.bloodbank">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,12 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReceiveBlood"></activity>
+        <activity android:name=".viewall"
+            android:theme="@style/all"></activity>
+        <activity android:name=".ReceiveBlood" />
         <activity android:name=".DonateBlood" />
-        <activity android:name=".HomeScreen" />
         <activity android:name=".Login" />
         <activity android:name=".Signup" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".HomeScreen" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".splash"
+            android:theme="@style/splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,10 +1,21 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">#9b0000</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="splash" parent="Theme.AppCompat.NoActionBar">
+
+    </style>
+
+    <style name="all" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@android:color/holo_red_dark</item>
+        <item name="colorPrimaryDark">#9b0000</item>
+        <item name="colorAccent">@android:color/holo_red_dark</item>
+    </style>
+
 
 </resources>

@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class HomeScreen extends AppCompatActivity {
 
-    Button touch,Receive;
+    Button touch,Receive,Details;
 
 
     @Override
@@ -19,6 +19,7 @@ public class HomeScreen extends AppCompatActivity {
 
         touch=findViewById(R.id.blood);
         Receive=findViewById(R.id.receive);
+        Details=findViewById(R.id.detail);
 
 
         touch.setOnClickListener(new View.OnClickListener() {
@@ -34,6 +35,13 @@ public class HomeScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),ReceiveBlood.class));
+            }
+        });
+
+        Details.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),viewall.class));
             }
         });
     }
